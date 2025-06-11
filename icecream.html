@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream: My Favorite Food</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #fcb69f 0%, #ffecd2 100%);
+            font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 700px;
+            margin: 40px auto;
+            background: rgba(255,255,255,0.95);
+            border-radius: 24px;
+            box-shadow: 0 8px 32px 0 rgba(255, 183, 197, 0.2);
+            padding: 32px 40px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 3em;
+            color: #ff6f91;
+            margin-bottom: 0.2em;
+        }
+        h2 {
+            color: #fcb69f;
+            margin-top: 1.5em;
+        }
+        .icecream-img {
+            display: block;
+            margin: 0 auto 24px auto;
+            border-radius: 16px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+            width: 80%;
+            max-width: 350px;
+        }
+        ul {
+            font-size: 1.2em;
+            line-height: 1.7;
+        }
+        .fun-fact {
+            background: #fff5ba;
+            border-left: 6px solid #ff6f91;
+            padding: 12px 18px;
+            margin: 18px 0;
+            border-radius: 8px;
+            font-size: 1.1em;
+        }
+        footer {
+            text-align: center;
+            margin-top: 32px;
+            color: #888;
+        }
+        .icecream-floaters {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            pointer-events: none;
+            z-index: 1000;
+        }
+        .floater {
+            position: absolute;
+            font-size: 2em;
+            opacity: 0.85;
+            animation: float-down 7s linear infinite;
+        }
+        .floater:nth-child(1) { left: 10%; animation-delay: 0s; }
+        .floater:nth-child(2) { left: 25%; animation-delay: 2s; }
+        .floater:nth-child(3) { left: 40%; animation-delay: 1s; }
+        .floater:nth-child(4) { left: 60%; animation-delay: 3s; }
+        .floater:nth-child(5) { left: 75%; animation-delay: 1.5s; }
+        .floater:nth-child(6) { left: 85%; animation-delay: 2.5s; }
+        .floater:nth-child(7) { left: 50%; animation-delay: 4s; }
+        @keyframes float-down {
+            0% { top: -60px; transform: rotate(-10deg) scale(1); opacity: 0.7; }
+            20% { transform: rotate(10deg) scale(1.1); opacity: 1; }
+            50% { transform: rotate(-10deg) scale(1.05); }
+            80% { opacity: 1; }
+            100% { top: 100vh; transform: rotate(10deg) scale(1); opacity: 0.7; }
+        }
+    </style>
+</head>
+<body>
+    <div class="icecream-floaters">
+        <span class="floater">🍦</span>
+        <span class="floater">🍨</span>
+        <span class="floater">🍧</span>
+        <span class="floater">🍦</span>
+        <span class="floater">🍬</span>
+        <span class="floater">🍭</span>
+        <span class="floater">🍦</span>
+    </div>
+    <div class="container">
+        <h1>🍦 Ice Cream! 🍦</h1>
+        <img class="icecream-img" src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80" alt="Delicious Ice Cream">
+        <div class="fun-fact">
+            Did you know? The first ice cream-like food was eaten in China around 618-97 AD!
+        </div>
+        <h2>Why I Love Ice Cream</h2>
+        <ul>
+            <li>It comes in so many delicious flavors.</li>
+            <li>Ice cream is the perfect treat on a hot day.</li>
+            <li>It can be enjoyed in cones, cups, or as a sundae.</li>
+            <li>There are endless toppings to choose from!</li>
+            <li>It brings joy to people of all ages.</li>
+        </ul>
+        <h2>Fun Ice Cream Facts</h2>
+        <ul>
+            <li>Vanilla is the most popular ice cream flavor in the world.</li>
+            <li>The largest ice cream cone was over 9 feet tall!</li>
+            <li>It takes about 50 licks to finish a single scoop of ice cream.</li>
+            <li>July is National Ice Cream Month in the USA.</li>
+            <li>There are even savory ice cream flavors, like garlic and cheese!</li>
+        </ul>
+        <img class="icecream-img" src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Colorful Ice Cream">
+        <div class="fun-fact">
+            The world record for the largest ice cream sundae weighed over 24 tons!
+        </div>
+    </div>
+    <footer>
+        Made with 🍦 by an ice cream lover
+    </footer>
+</body>
+</html> 
